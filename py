@@ -31,7 +31,11 @@ if answer == "yes":
                                         elif answer.lower() == "mountain":
                                             answer = input("You run up to the top of the mountain where you encouter the last member of the boar family, do you fight it or run away?(fight/run): ")
                                             if answer.lower() == "fight":
-                                                pass
+                                                answer = input("You and the boar get into a grueling battle, but you manage to come out on top, but now you're having second thought about leaving the island, do you use the boar tusks to start a fire or stay on the island?(fire/island): ")
+                                                if answer.lower() == "fire":
+                                                    print("You managed to get the pilot's attention to leave the island and return back to your family!")
+                                                elif answer.lower() == "island":
+                                                    print("You slip and fall 100ft to your death!")
                                             if answer.lower() == "run":
                                                 print("The boar impales you and you both fall off the side of the mountain!")
 
@@ -72,7 +76,11 @@ if answer == "yes":
                                     elif answer.lower() == "mountain":
                                         answer = input("You run up to the top of the mountain where you encouter the last member of the boar family, do you fight it or run away?(fight/run): ")
                                         if answer.lower() == "fight":
-                                            answer = input("")
+                                            answer = input("You and the boar get into a grueling battle, but you manage to come out on top, but now you're having second thought about leaving the island, do you use the boar tusks to start a fire or stay on the island?(fire/island): ")
+                                            if answer.lower() == "fire":
+                                                print("You managed to get the pilot's attention to leave the island and return back to your family!")
+                                            elif answer.lower() == "island":
+                                                print("You slip and fall 100ft to your death!")
                                         if answer.lower() == "run":
                                             print("The boar impales you and you both fall off the side of the mountain!")
 
