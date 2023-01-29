@@ -1,8 +1,8 @@
-answer = input("You see a deal for a flight to Spain, do you buy the ticket?(yes/no): ").lower()
-if answer == "yes":
+answer = input("You see a deal for a flight to Spain, do you buy the ticket?(yes/no): ")
+if answer.lower() == "yes":
     answer = input("On your flight the wings of your plane breaks, do you put your oxygen mask on? (yes/no): ")
     if answer.lower() == "yes":
-        answer = input("You wake up on an island, do you check for any survivors?(yes/no): ").lower()
+        answer = input("You wake up on an island, do you check for any survivors?(yes/no): ")
         
         if answer.lower() == "yes":
             answer = input("You found a man with a piece of the plane impaled in their chest, do you put them out misery or try to save him?(kill/save): ")
@@ -51,7 +51,7 @@ if answer == "yes":
                         answer = input("The boar sees you and impales you with its tusk, do you move to the beach or lie on the ground?(beach/ground): ")
                         if answer.lower() == "beach":
                             print("You die on the beach watching a beauiful sunset")
-                        elif answer == "ground":
+                        elif answer.lower() == "ground":
                             print("The boar eats you alive!")
 
                 elif answer.lower() == "fish":
@@ -96,8 +96,8 @@ if answer == "yes":
         elif answer.lower() == "no":
             print("You get killed by the other remaining surviors that were hiding for trying to leave them!")
 
-    elif answer == "no":
+    elif answer.lower() == "no":
         print("You died in the plane crash!")
 
-elif answer == "no":
+elif answer.lower() == "no":
     print("You slip and died due to head trauma!")
